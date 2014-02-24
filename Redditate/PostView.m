@@ -49,18 +49,37 @@
         
         // UI Image Part -------------------------------------------
         if(![[postData thumbnail]  isEqual:@""]) {
-            NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:[postData thumbnail]]];
+            
+            NSMutableString *imageURL = [[postData url] mutableCopy];
+        
+            if ([[postData url] rangeOfString:@".jpg"].location != NSNotFound) {
+                imageURL = [[postData url] mutableCopy];
+            }
+            if ([[postData url] rangeOfString:@".png"].location != NSNotFound) {
+                imageURL = [[postData url] mutableCopy];
+            }
+            if ([[postData url] rangeOfString:@".gif"].location != NSNotFound) {
+                imageURL = [[postData url] mutableCopy];
+            }
+            if ([[postData url] rangeOfString:@"imgur"].location != NSNotFound
+                && [[postData url] rangeOfString:@"jpg"].location == NSNotFound
+                && [[postData url] rangeOfString:@"gallery"].location == NSNotFound) {
+                    imageURL = [[postData url] mutableCopy];
+                    NSLog(@"%@", imageURL);
+                    [imageURL appendString:@".jpg"];
+            }
+            
+            
+            NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:imageURL]];
             UIImage *image = [[UIImage alloc] initWithData:imageData];
             UIImageView *imagePreview = [[UIImageView alloc] initWithFrame:CGRectZero];
-//            float imageHeight = (290/image.size.width)*image.size.height;
-            float imageHeight = 150;
-            imagePreview.frame = CGRectMake(15, titleView.frame.size.height-15, 290, imageHeight);
-            
-            [imagePreview setImage:image];
-            
-            [self addSubview:imagePreview];
-            
-            postHeight = titleView.frame.size.height + imagePreview.frame.size.height;
+            if(image.size.width != 0) {
+                float imageHeight = (290/image.size.width)*image.size.height;
+                imagePreview.frame = CGRectMake(15, titleView.frame.size.height-15, 290, imageHeight);
+                [imagePreview setImage:image];
+                [self addSubview:imagePreview];
+                postHeight = titleView.frame.size.height + imageHeight;
+            }
         }
 
         [self setFrame:CGRectMake(0, 0, 320, postHeight)];

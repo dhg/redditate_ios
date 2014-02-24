@@ -10,7 +10,7 @@
 
 @interface Post : NSObject
 @property (nonatomic) NSString *title;
-@property (nonatomic) NSURL *url;
+@property (nonatomic) NSMutableString *url;
 @property (nonatomic) NSNumber *num_comments;
 @property (nonatomic) NSString *thumbnail;
 @property (nonatomic) CGFloat *postHeight;

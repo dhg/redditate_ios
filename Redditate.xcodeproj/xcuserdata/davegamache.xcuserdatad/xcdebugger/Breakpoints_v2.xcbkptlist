@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MasterViewController.m"
-            timestampString = "414914799.665904"
+            filePath = "Redditate/PostView.m"
+            timestampString = "414920860.021956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "-tableView:heightForRowAtIndexPath:"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "-initWithFrame:AndPostData:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
