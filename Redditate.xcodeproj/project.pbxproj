@@ -24,6 +24,7 @@
 		C42354FA18A390F8008A25A9 /* PostParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354F918A390F8008A25A9 /* PostParser.m */; };
 		C423550518A4A4E8008A25A9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C423550418A4A4E8008A25A9 /* MasterViewController.m */; };
 		C4B0003018BACC6100665965 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4B0002F18BACC6100665965 /* AvenirLTStd-Light.otf */; };
+		C4B0003418BB14A600665965 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B0003318BB14A600665965 /* WebView.m */; };
 		C4DE07CF18A76FD300DCD7AD /* PostView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE07CE18A76FD300DCD7AD /* PostView.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		C423550318A4A4E8008A25A9 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		C423550418A4A4E8008A25A9 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
 		C4B0002F18BACC6100665965 /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
+		C4B0003218BB14A600665965 /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
+		C4B0003318BB14A600665965 /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
 		C4DE07CD18A76FD300DCD7AD /* PostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostView.h; sourceTree = "<group>"; };
 		C4DE07CE18A76FD300DCD7AD /* PostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostView.m; sourceTree = "<group>"; };
 		C4DE07D118A7FDC400DCD7AD /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 			children = (
 				C4DE07CD18A76FD300DCD7AD /* PostView.h */,
 				C4DE07CE18A76FD300DCD7AD /* PostView.m */,
+				C4B0003218BB14A600665965 /* WebView.h */,
+				C4B0003318BB14A600665965 /* WebView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				C4DE07CF18A76FD300DCD7AD /* PostView.m in Sources */,
 				C42354FA18A390F8008A25A9 /* PostParser.m in Sources */,
 				C42354D018A381CB008A25A9 /* main.m in Sources */,
+				C4B0003418BB14A600665965 /* WebView.m in Sources */,
 				C423550518A4A4E8008A25A9 /* MasterViewController.m in Sources */,
 				C42354F718A39025008A25A9 /* Post.m in Sources */,
 			);

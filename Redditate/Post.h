@@ -12,7 +12,7 @@
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSURL *url;
 @property (nonatomic) NSNumber *num_comments;
-@property (nonatomic) NSURL *thumbnail;
+@property (nonatomic) NSString *thumbnail;
 @property (nonatomic) CGFloat *postHeight;
 
 @end
