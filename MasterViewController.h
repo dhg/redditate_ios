@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface MasterViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate>
 
 @end

@@ -23,6 +23,7 @@
 		C42354F718A39025008A25A9 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354F618A39025008A25A9 /* Post.m */; };
 		C42354FA18A390F8008A25A9 /* PostParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354F918A390F8008A25A9 /* PostParser.m */; };
 		C423550518A4A4E8008A25A9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C423550418A4A4E8008A25A9 /* MasterViewController.m */; };
+		C4B0003018BACC6100665965 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4B0002F18BACC6100665965 /* AvenirLTStd-Light.otf */; };
 		C4DE07CF18A76FD300DCD7AD /* PostView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE07CE18A76FD300DCD7AD /* PostView.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		C42354F918A390F8008A25A9 /* PostParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostParser.m; sourceTree = "<group>"; };
 		C423550318A4A4E8008A25A9 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		C423550418A4A4E8008A25A9 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
+		C4B0002F18BACC6100665965 /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
 		C4DE07CD18A76FD300DCD7AD /* PostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostView.h; sourceTree = "<group>"; };
 		C4DE07CE18A76FD300DCD7AD /* PostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostView.m; sourceTree = "<group>"; };
 		C4DE07D118A7FDC400DCD7AD /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				C42354D318A381CB008A25A9 /* AppDelegate.m */,
 				C423550318A4A4E8008A25A9 /* MasterViewController.h */,
 				C423550418A4A4E8008A25A9 /* MasterViewController.m */,
+				C4B0002E18BACB3400665965 /* Resources */,
 				C4DE07D018A76FDE00DCD7AD /* Views */,
 				C42354FF18A4808A008A25A9 /* Fetching */,
 				C42354FE18A48062008A25A9 /* Model */,
@@ -184,6 +187,22 @@
 				C42354F918A390F8008A25A9 /* PostParser.m */,
 			);
 			name = Fetching;
+			sourceTree = "<group>";
+		};
+		C4B0002E18BACB3400665965 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0003118BACC6700665965 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C4B0003118BACC6700665965 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0002F18BACC6100665965 /* AvenirLTStd-Light.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		C4DE07D018A76FDE00DCD7AD /* Views */ = {
@@ -271,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C42354CE18A381CB008A25A9 /* InfoPlist.strings in Resources */,
+				C4B0003018BACC6100665965 /* AvenirLTStd-Light.otf in Resources */,
 				C42354D618A381CB008A25A9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

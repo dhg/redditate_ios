@@ -16,11 +16,21 @@
     if (self) {
         
         // Create the title view
-        UILabel *titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 0)];
-        titleView.lineBreakMode = NSLineBreakByWordWrapping;
-        titleView.numberOfLines = 0;
+        UITextView *titleView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 300, 0)];
+        
+        NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+        style.lineSpacing = 6;
+        titleView.attributedText = [[NSAttributedString alloc]
+                                    initWithString:@"Loading"
+                                    attributes:@{
+                                                 NSKernAttributeName: @(-0.1f),
+                                                 NSParagraphStyleAttributeName: style
+                                                 }];
+        titleView.editable = NO;
+        titleView.font = [UIFont fontWithName:@"AvenirLTStd-Light" size:19];
         titleView.text = [postData title];
-        [titleView setUserInteractionEnabled:NO];
+        
+        
         
         // Add the titleview as subview of postview
         [self addSubview:titleView];
@@ -29,13 +39,16 @@
         [titleView sizeToFit];
         
         // Reset rest of frame of title to inset it a bit for padding
-        titleView.frame = CGRectMake(10, 0, 300, titleView.frame.size.height + 20);
+        titleView.frame = CGRectMake(10, 10, 300, titleView.frame.size.height + 20);
         
         // Set frame of the actual postview to match height of titleview
         [self setFrame:CGRectMake(0, 0, 320, titleView.frame.size.height)];
         
     }
     return self;
+    
+    
+    
 }
 
 @end

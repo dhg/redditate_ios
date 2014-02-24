@@ -10,6 +10,7 @@
 #import "PostFetcher.h"
 #import "PostParser.h"
 #import "PostView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MasterViewController () {
     PostFetcher *homepageFetcher;
@@ -39,6 +40,8 @@
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.view = tableView;
+    tableView.layer.cornerRadius = 6.0f;
+    tableView.layer.masksToBounds = YES;
     tableView.dataSource = self;
     tableView.delegate = self;
     
@@ -48,7 +51,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -62,16 +64,19 @@
         postViews = [[NSMutableArray alloc] init];
     }
     [postViews addObject:postView];
+    
     return postView.frame.size.height;
+    
+    
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-        [cell.contentView addSubview:postViews[indexPath.row]];
-    }
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    [cell.contentView addSubview:postViews[indexPath.row]];
+    
+//    TODO: Need to reuse the cells with dequeueReusableCellWithIdentifier, but can't figure out how to get height right
 
     return cell;
 }
