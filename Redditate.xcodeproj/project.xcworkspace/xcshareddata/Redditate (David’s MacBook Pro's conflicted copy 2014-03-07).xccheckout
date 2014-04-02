@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>545DE94C-D40A-4D2F-A11D-F99DF7B16613</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Redditate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>339427EB-5D2C-4EC6-AD65-706ABD562ADF</key>
+		<string>ssh://github.com/dhg/redditate_ios.git</string>
+		<key>C415A101-69DE-4EA3-A36F-2DD345B1B92E</key>
+		<string>ssh://github.com/dhg/redditate_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Redditate.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>339427EB-5D2C-4EC6-AD65-706ABD562ADF</key>
+		<string>../../../../../projects/redditate/ios</string>
+		<key>C415A101-69DE-4EA3-A36F-2DD345B1B92E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/dhg/redditate_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C415A101-69DE-4EA3-A36F-2DD345B1B92E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C415A101-69DE-4EA3-A36F-2DD345B1B92E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>339427EB-5D2C-4EC6-AD65-706ABD562ADF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

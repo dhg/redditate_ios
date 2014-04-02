@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5583361718EC61FB0092D805 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
 		C42354C018A381CB008A25A9 /* Redditate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redditate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42354C318A381CB008A25A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C42354C518A381CB008A25A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,7 +69,6 @@
 		C4B0003318BB14A600665965 /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
 		C4DE07CD18A76FD300DCD7AD /* PostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostView.h; sourceTree = "<group>"; };
 		C4DE07CE18A76FD300DCD7AD /* PostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostView.m; sourceTree = "<group>"; };
-		C4DE07D118A7FDC400DCD7AD /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 		C42354C218A381CB008A25A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C4DE07D118A7FDC400DCD7AD /* Reveal.framework */,
+				5583361718EC61FB0092D805 /* Reveal.framework */,
 				C42354C318A381CB008A25A9 /* Foundation.framework */,
 				C42354C518A381CB008A25A9 /* CoreGraphics.framework */,
 				C42354C718A381CB008A25A9 /* UIKit.framework */,
@@ -444,6 +444,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/davegamache/Dropbox-Work/Dropbox\\ (Personal)/Documents/Texts/C\\ Learning/Redditate",
+					"/Users/Dave/Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Redditate/Redditate-Prefix.pch";
@@ -466,6 +467,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/davegamache/Dropbox-Work/Dropbox\\ (Personal)/Documents/Texts/C\\ Learning/Redditate",
+					"/Users/Dave/Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Redditate/Redditate-Prefix.pch";

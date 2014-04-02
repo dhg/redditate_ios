@@ -71,6 +71,11 @@
     titleView.text = title;
     [self addSubview:titleView];
     [titleView sizeToFit];
+    
+    // Some weird workaround to make text not crop at 50% height...
+    titleView.text = @"";
+    titleView.text = title;
+    
     titleView.frame = CGRectMake(10, 15, 300, titleView.frame.size.height + 30);
     postHeight = titleView.frame.size.height;
 }
