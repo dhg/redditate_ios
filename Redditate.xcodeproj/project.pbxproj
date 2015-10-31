@@ -7,368 +7,492 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C42354C418A381CB008A25A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42354C318A381CB008A25A9 /* Foundation.framework */; };
-		C42354C618A381CB008A25A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42354C518A381CB008A25A9 /* CoreGraphics.framework */; };
-		C42354C818A381CB008A25A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42354C718A381CB008A25A9 /* UIKit.framework */; };
-		C42354CE18A381CB008A25A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C42354CC18A381CB008A25A9 /* InfoPlist.strings */; };
-		C42354D018A381CB008A25A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354CF18A381CB008A25A9 /* main.m */; };
-		C42354D418A381CB008A25A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354D318A381CB008A25A9 /* AppDelegate.m */; };
-		C42354D618A381CB008A25A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42354D518A381CB008A25A9 /* Images.xcassets */; };
-		C42354DD18A381CB008A25A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42354DC18A381CB008A25A9 /* XCTest.framework */; };
-		C42354DE18A381CB008A25A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42354C318A381CB008A25A9 /* Foundation.framework */; };
-		C42354DF18A381CB008A25A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42354C718A381CB008A25A9 /* UIKit.framework */; };
-		C42354E718A381CB008A25A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C42354E518A381CB008A25A9 /* InfoPlist.strings */; };
-		C42354E918A381CB008A25A9 /* RedditateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354E818A381CB008A25A9 /* RedditateTests.m */; };
-		C42354F418A38A67008A25A9 /* PostFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354F318A38A67008A25A9 /* PostFetcher.m */; };
-		C42354F718A39025008A25A9 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354F618A39025008A25A9 /* Post.m */; };
-		C42354FA18A390F8008A25A9 /* PostParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C42354F918A390F8008A25A9 /* PostParser.m */; };
-		C423550518A4A4E8008A25A9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C423550418A4A4E8008A25A9 /* MasterViewController.m */; };
-		C4B0003018BACC6100665965 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4B0002F18BACC6100665965 /* AvenirLTStd-Light.otf */; };
-		C4B0003418BB14A600665965 /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B0003318BB14A600665965 /* WebView.m */; };
-		C4DE07CF18A76FD300DCD7AD /* PostView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE07CE18A76FD300DCD7AD /* PostView.m */; };
+		551C33621BE457EE008BE5FB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C33611BE457EE008BE5FB /* SwiftyJSON.swift */; };
+		551C337B1BE45AE7008BE5FB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551C336E1BE45A9C008BE5FB /* Alamofire.framework */; };
+		551C337C1BE45AE7008BE5FB /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 551C336E1BE45A9C008BE5FB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		551C33811BE45B13008BE5FB /* RedditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C33801BE45B13008BE5FB /* RedditService.swift */; };
+		55B284BD1BE31F8E001E1803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B284BC1BE31F8E001E1803 /* AppDelegate.swift */; };
+		55B284C21BE31F8E001E1803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B284C01BE31F8E001E1803 /* Main.storyboard */; };
+		55B284C51BE31F8E001E1803 /* Redditate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55B284C31BE31F8E001E1803 /* Redditate.xcdatamodeld */; };
+		55B284C71BE31F8E001E1803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B284C61BE31F8E001E1803 /* Assets.xcassets */; };
+		55B284CA1BE31F8E001E1803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B284C81BE31F8E001E1803 /* LaunchScreen.storyboard */; };
+		55B284D51BE31F8E001E1803 /* RedditateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B284D41BE31F8E001E1803 /* RedditateTests.swift */; };
+		55B284E01BE31F8E001E1803 /* RedditateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B284DF1BE31F8E001E1803 /* RedditateUITests.swift */; };
+		55B284EE1BE3218D001E1803 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B284ED1BE3218D001E1803 /* PostsTableViewController.swift */; };
+		55B284F21BE326A6001E1803 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B284F11BE326A6001E1803 /* PostTableViewCell.swift */; };
+		55B284F41BE332F9001E1803 /* FixtureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B284F31BE332F9001E1803 /* FixtureData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C42354E018A381CB008A25A9 /* PBXContainerItemProxy */ = {
+		551C336D1BE45A9C008BE5FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C42354B818A381CB008A25A9 /* Project object */;
+			containerPortal = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		551C336F1BE45A9C008BE5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		551C33711BE45A9C008BE5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		551C33731BE45A9C008BE5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		551C33751BE45A9C008BE5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		551C33771BE45A9C008BE5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		551C33791BE45A9C008BE5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		551C337D1BE45AE7008BE5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = C42354BF18A381CB008A25A9;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		55B284D11BE31F8E001E1803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B284B11BE31F8D001E1803 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B284B81BE31F8D001E1803;
+			remoteInfo = Redditate;
+		};
+		55B284DC1BE31F8E001E1803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B284B11BE31F8D001E1803 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B284B81BE31F8D001E1803;
 			remoteInfo = Redditate;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		551C337F1BE45AE7008BE5FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				551C337C1BE45AE7008BE5FB /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5583361718EC61FB0092D805 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
-		C42354C018A381CB008A25A9 /* Redditate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redditate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C42354C318A381CB008A25A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C42354C518A381CB008A25A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C42354C718A381CB008A25A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C42354CB18A381CB008A25A9 /* Redditate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Redditate-Info.plist"; sourceTree = "<group>"; };
-		C42354CD18A381CB008A25A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C42354CF18A381CB008A25A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C42354D118A381CB008A25A9 /* Redditate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Redditate-Prefix.pch"; sourceTree = "<group>"; };
-		C42354D218A381CB008A25A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C42354D318A381CB008A25A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C42354D518A381CB008A25A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C42354DB18A381CB008A25A9 /* RedditateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C42354DC18A381CB008A25A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C42354E418A381CB008A25A9 /* RedditateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedditateTests-Info.plist"; sourceTree = "<group>"; };
-		C42354E618A381CB008A25A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C42354E818A381CB008A25A9 /* RedditateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedditateTests.m; sourceTree = "<group>"; };
-		C42354F218A38A67008A25A9 /* PostFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostFetcher.h; sourceTree = "<group>"; };
-		C42354F318A38A67008A25A9 /* PostFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostFetcher.m; sourceTree = "<group>"; };
-		C42354F518A39025008A25A9 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
-		C42354F618A39025008A25A9 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
-		C42354F818A390F8008A25A9 /* PostParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostParser.h; sourceTree = "<group>"; };
-		C42354F918A390F8008A25A9 /* PostParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostParser.m; sourceTree = "<group>"; };
-		C423550318A4A4E8008A25A9 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
-		C423550418A4A4E8008A25A9 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
-		C4B0002F18BACC6100665965 /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
-		C4B0003218BB14A600665965 /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
-		C4B0003318BB14A600665965 /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
-		C4DE07CD18A76FD300DCD7AD /* PostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostView.h; sourceTree = "<group>"; };
-		C4DE07CE18A76FD300DCD7AD /* PostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostView.m; sourceTree = "<group>"; };
+		551C33611BE457EE008BE5FB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		551C33801BE45B13008BE5FB /* RedditService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditService.swift; sourceTree = "<group>"; };
+		55B284B91BE31F8D001E1803 /* Redditate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redditate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B284BC1BE31F8E001E1803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55B284C11BE31F8E001E1803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55B284C41BE31F8E001E1803 /* Redditate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Redditate.xcdatamodel; sourceTree = "<group>"; };
+		55B284C61BE31F8E001E1803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55B284C91BE31F8E001E1803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55B284CB1BE31F8E001E1803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B284D01BE31F8E001E1803 /* RedditateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B284D41BE31F8E001E1803 /* RedditateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditateTests.swift; sourceTree = "<group>"; };
+		55B284D61BE31F8E001E1803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B284DB1BE31F8E001E1803 /* RedditateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B284DF1BE31F8E001E1803 /* RedditateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditateUITests.swift; sourceTree = "<group>"; };
+		55B284E11BE31F8E001E1803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B284ED1BE3218D001E1803 /* PostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
+		55B284F11BE326A6001E1803 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		55B284F31BE332F9001E1803 /* FixtureData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C42354BD18A381CB008A25A9 /* Frameworks */ = {
+		55B284B61BE31F8D001E1803 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42354C618A381CB008A25A9 /* CoreGraphics.framework in Frameworks */,
-				C42354C818A381CB008A25A9 /* UIKit.framework in Frameworks */,
-				C42354C418A381CB008A25A9 /* Foundation.framework in Frameworks */,
+				551C337B1BE45AE7008BE5FB /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C42354D818A381CB008A25A9 /* Frameworks */ = {
+		55B284CD1BE31F8E001E1803 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42354DD18A381CB008A25A9 /* XCTest.framework in Frameworks */,
-				C42354DF18A381CB008A25A9 /* UIKit.framework in Frameworks */,
-				C42354DE18A381CB008A25A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B284D81BE31F8E001E1803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C42354B718A381CB008A25A9 = {
+		551C33641BE45A9C008BE5FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C42354C918A381CB008A25A9 /* Redditate */,
-				C42354E218A381CB008A25A9 /* RedditateTests */,
-				C42354C218A381CB008A25A9 /* Frameworks */,
-				C42354C118A381CB008A25A9 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		C42354C118A381CB008A25A9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C42354C018A381CB008A25A9 /* Redditate.app */,
-				C42354DB18A381CB008A25A9 /* RedditateTests.xctest */,
+				551C336E1BE45A9C008BE5FB /* Alamofire.framework */,
+				551C33701BE45A9C008BE5FB /* Alamofire iOS Tests.xctest */,
+				551C33721BE45A9C008BE5FB /* Alamofire.framework */,
+				551C33741BE45A9C008BE5FB /* Alamofire OSX Tests.xctest */,
+				551C33761BE45A9C008BE5FB /* Alamofire.framework */,
+				551C33781BE45A9C008BE5FB /* Alamofire tvOS Tests.xctest */,
+				551C337A1BE45A9C008BE5FB /* Alamofire.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C42354C218A381CB008A25A9 /* Frameworks */ = {
+		55B284B01BE31F8D001E1803 = {
 			isa = PBXGroup;
 			children = (
-				5583361718EC61FB0092D805 /* Reveal.framework */,
-				C42354C318A381CB008A25A9 /* Foundation.framework */,
-				C42354C518A381CB008A25A9 /* CoreGraphics.framework */,
-				C42354C718A381CB008A25A9 /* UIKit.framework */,
-				C42354DC18A381CB008A25A9 /* XCTest.framework */,
+				55B284BB1BE31F8E001E1803 /* Redditate */,
+				55B284D31BE31F8E001E1803 /* RedditateTests */,
+				55B284DE1BE31F8E001E1803 /* RedditateUITests */,
+				55B284BA1BE31F8D001E1803 /* Products */,
+				551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */,
 			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C42354C918A381CB008A25A9 /* Redditate */ = {
+		55B284BA1BE31F8D001E1803 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C42354D218A381CB008A25A9 /* AppDelegate.h */,
-				C42354D318A381CB008A25A9 /* AppDelegate.m */,
-				C423550318A4A4E8008A25A9 /* MasterViewController.h */,
-				C423550418A4A4E8008A25A9 /* MasterViewController.m */,
-				C4B0002E18BACB3400665965 /* Resources */,
-				C4DE07D018A76FDE00DCD7AD /* Views */,
-				C42354FF18A4808A008A25A9 /* Fetching */,
-				C42354FE18A48062008A25A9 /* Model */,
-				C42354D518A381CB008A25A9 /* Images.xcassets */,
-				C42354CA18A381CB008A25A9 /* Supporting Files */,
+				55B284B91BE31F8D001E1803 /* Redditate.app */,
+				55B284D01BE31F8E001E1803 /* RedditateTests.xctest */,
+				55B284DB1BE31F8E001E1803 /* RedditateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55B284BB1BE31F8E001E1803 /* Redditate */ = {
+			isa = PBXGroup;
+			children = (
+				551C33611BE457EE008BE5FB /* SwiftyJSON.swift */,
+				55B284BC1BE31F8E001E1803 /* AppDelegate.swift */,
+				55B284ED1BE3218D001E1803 /* PostsTableViewController.swift */,
+				55B284F11BE326A6001E1803 /* PostTableViewCell.swift */,
+				55B284F31BE332F9001E1803 /* FixtureData.swift */,
+				551C33801BE45B13008BE5FB /* RedditService.swift */,
+				55B284C01BE31F8E001E1803 /* Main.storyboard */,
+				55B284C61BE31F8E001E1803 /* Assets.xcassets */,
+				55B284C81BE31F8E001E1803 /* LaunchScreen.storyboard */,
+				55B284CB1BE31F8E001E1803 /* Info.plist */,
+				55B284C31BE31F8E001E1803 /* Redditate.xcdatamodeld */,
 			);
 			path = Redditate;
 			sourceTree = "<group>";
 		};
-		C42354CA18A381CB008A25A9 /* Supporting Files */ = {
+		55B284D31BE31F8E001E1803 /* RedditateTests */ = {
 			isa = PBXGroup;
 			children = (
-				C42354CB18A381CB008A25A9 /* Redditate-Info.plist */,
-				C42354CC18A381CB008A25A9 /* InfoPlist.strings */,
-				C42354CF18A381CB008A25A9 /* main.m */,
-				C42354D118A381CB008A25A9 /* Redditate-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C42354E218A381CB008A25A9 /* RedditateTests */ = {
-			isa = PBXGroup;
-			children = (
-				C42354E818A381CB008A25A9 /* RedditateTests.m */,
-				C42354E318A381CB008A25A9 /* Supporting Files */,
+				55B284D41BE31F8E001E1803 /* RedditateTests.swift */,
+				55B284D61BE31F8E001E1803 /* Info.plist */,
 			);
 			path = RedditateTests;
 			sourceTree = "<group>";
 		};
-		C42354E318A381CB008A25A9 /* Supporting Files */ = {
+		55B284DE1BE31F8E001E1803 /* RedditateUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C42354E418A381CB008A25A9 /* RedditateTests-Info.plist */,
-				C42354E518A381CB008A25A9 /* InfoPlist.strings */,
+				55B284DF1BE31F8E001E1803 /* RedditateUITests.swift */,
+				55B284E11BE31F8E001E1803 /* Info.plist */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C42354FE18A48062008A25A9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C42354F518A39025008A25A9 /* Post.h */,
-				C42354F618A39025008A25A9 /* Post.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		C42354FF18A4808A008A25A9 /* Fetching */ = {
-			isa = PBXGroup;
-			children = (
-				C42354F218A38A67008A25A9 /* PostFetcher.h */,
-				C42354F318A38A67008A25A9 /* PostFetcher.m */,
-				C42354F818A390F8008A25A9 /* PostParser.h */,
-				C42354F918A390F8008A25A9 /* PostParser.m */,
-			);
-			name = Fetching;
-			sourceTree = "<group>";
-		};
-		C4B0002E18BACB3400665965 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C4B0003118BACC6700665965 /* Fonts */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C4B0003118BACC6700665965 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				C4B0002F18BACC6100665965 /* AvenirLTStd-Light.otf */,
-			);
-			name = Fonts;
-			sourceTree = "<group>";
-		};
-		C4DE07D018A76FDE00DCD7AD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C4DE07CD18A76FD300DCD7AD /* PostView.h */,
-				C4DE07CE18A76FD300DCD7AD /* PostView.m */,
-				C4B0003218BB14A600665965 /* WebView.h */,
-				C4B0003318BB14A600665965 /* WebView.m */,
-			);
-			name = Views;
+			path = RedditateUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C42354BF18A381CB008A25A9 /* Redditate */ = {
+		55B284B81BE31F8D001E1803 /* Redditate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C42354EC18A381CB008A25A9 /* Build configuration list for PBXNativeTarget "Redditate" */;
+			buildConfigurationList = 55B284E41BE31F8E001E1803 /* Build configuration list for PBXNativeTarget "Redditate" */;
 			buildPhases = (
-				C42354BC18A381CB008A25A9 /* Sources */,
-				C42354BD18A381CB008A25A9 /* Frameworks */,
-				C42354BE18A381CB008A25A9 /* Resources */,
+				55B284B51BE31F8D001E1803 /* Sources */,
+				55B284B61BE31F8D001E1803 /* Frameworks */,
+				55B284B71BE31F8D001E1803 /* Resources */,
+				551C337F1BE45AE7008BE5FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				551C337E1BE45AE7008BE5FB /* PBXTargetDependency */,
 			);
 			name = Redditate;
 			productName = Redditate;
-			productReference = C42354C018A381CB008A25A9 /* Redditate.app */;
+			productReference = 55B284B91BE31F8D001E1803 /* Redditate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C42354DA18A381CB008A25A9 /* RedditateTests */ = {
+		55B284CF1BE31F8E001E1803 /* RedditateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C42354EF18A381CB008A25A9 /* Build configuration list for PBXNativeTarget "RedditateTests" */;
+			buildConfigurationList = 55B284E71BE31F8E001E1803 /* Build configuration list for PBXNativeTarget "RedditateTests" */;
 			buildPhases = (
-				C42354D718A381CB008A25A9 /* Sources */,
-				C42354D818A381CB008A25A9 /* Frameworks */,
-				C42354D918A381CB008A25A9 /* Resources */,
+				55B284CC1BE31F8E001E1803 /* Sources */,
+				55B284CD1BE31F8E001E1803 /* Frameworks */,
+				55B284CE1BE31F8E001E1803 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C42354E118A381CB008A25A9 /* PBXTargetDependency */,
+				55B284D21BE31F8E001E1803 /* PBXTargetDependency */,
 			);
 			name = RedditateTests;
 			productName = RedditateTests;
-			productReference = C42354DB18A381CB008A25A9 /* RedditateTests.xctest */;
+			productReference = 55B284D01BE31F8E001E1803 /* RedditateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55B284DA1BE31F8E001E1803 /* RedditateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B284EA1BE31F8E001E1803 /* Build configuration list for PBXNativeTarget "RedditateUITests" */;
+			buildPhases = (
+				55B284D71BE31F8E001E1803 /* Sources */,
+				55B284D81BE31F8E001E1803 /* Frameworks */,
+				55B284D91BE31F8E001E1803 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55B284DD1BE31F8E001E1803 /* PBXTargetDependency */,
+			);
+			name = RedditateUITests;
+			productName = RedditateUITests;
+			productReference = 55B284DB1BE31F8E001E1803 /* RedditateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C42354B818A381CB008A25A9 /* Project object */ = {
+		55B284B11BE31F8D001E1803 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Dave Gamache";
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "David Gamache";
 				TargetAttributes = {
-					C42354DA18A381CB008A25A9 = {
-						TestTargetID = C42354BF18A381CB008A25A9;
+					55B284B81BE31F8D001E1803 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = B2NFV9BAMG;
+					};
+					55B284CF1BE31F8E001E1803 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = B2NFV9BAMG;
+						TestTargetID = 55B284B81BE31F8D001E1803;
+					};
+					55B284DA1BE31F8E001E1803 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = B2NFV9BAMG;
+						TestTargetID = 55B284B81BE31F8D001E1803;
 					};
 				};
 			};
-			buildConfigurationList = C42354BB18A381CB008A25A9 /* Build configuration list for PBXProject "Redditate" */;
+			buildConfigurationList = 55B284B41BE31F8D001E1803 /* Build configuration list for PBXProject "Redditate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = C42354B718A381CB008A25A9;
-			productRefGroup = C42354C118A381CB008A25A9 /* Products */;
+			mainGroup = 55B284B01BE31F8D001E1803;
+			productRefGroup = 55B284BA1BE31F8D001E1803 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 551C33641BE45A9C008BE5FB /* Products */;
+					ProjectRef = 551C33631BE45A9C008BE5FB /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				C42354BF18A381CB008A25A9 /* Redditate */,
-				C42354DA18A381CB008A25A9 /* RedditateTests */,
+				55B284B81BE31F8D001E1803 /* Redditate */,
+				55B284CF1BE31F8E001E1803 /* RedditateTests */,
+				55B284DA1BE31F8E001E1803 /* RedditateUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		551C336E1BE45A9C008BE5FB /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 551C336D1BE45A9C008BE5FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551C33701BE45A9C008BE5FB /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 551C336F1BE45A9C008BE5FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551C33721BE45A9C008BE5FB /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 551C33711BE45A9C008BE5FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551C33741BE45A9C008BE5FB /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 551C33731BE45A9C008BE5FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551C33761BE45A9C008BE5FB /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 551C33751BE45A9C008BE5FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551C33781BE45A9C008BE5FB /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 551C33771BE45A9C008BE5FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		551C337A1BE45A9C008BE5FB /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 551C33791BE45A9C008BE5FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
-		C42354BE18A381CB008A25A9 /* Resources */ = {
+		55B284B71BE31F8D001E1803 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42354CE18A381CB008A25A9 /* InfoPlist.strings in Resources */,
-				C4B0003018BACC6100665965 /* AvenirLTStd-Light.otf in Resources */,
-				C42354D618A381CB008A25A9 /* Images.xcassets in Resources */,
+				55B284CA1BE31F8E001E1803 /* LaunchScreen.storyboard in Resources */,
+				55B284C71BE31F8E001E1803 /* Assets.xcassets in Resources */,
+				55B284C21BE31F8E001E1803 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C42354D918A381CB008A25A9 /* Resources */ = {
+		55B284CE1BE31F8E001E1803 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42354E718A381CB008A25A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B284D91BE31F8E001E1803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C42354BC18A381CB008A25A9 /* Sources */ = {
+		55B284B51BE31F8D001E1803 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42354F418A38A67008A25A9 /* PostFetcher.m in Sources */,
-				C42354D418A381CB008A25A9 /* AppDelegate.m in Sources */,
-				C4DE07CF18A76FD300DCD7AD /* PostView.m in Sources */,
-				C42354FA18A390F8008A25A9 /* PostParser.m in Sources */,
-				C42354D018A381CB008A25A9 /* main.m in Sources */,
-				C4B0003418BB14A600665965 /* WebView.m in Sources */,
-				C423550518A4A4E8008A25A9 /* MasterViewController.m in Sources */,
-				C42354F718A39025008A25A9 /* Post.m in Sources */,
+				55B284F41BE332F9001E1803 /* FixtureData.swift in Sources */,
+				551C33811BE45B13008BE5FB /* RedditService.swift in Sources */,
+				55B284C51BE31F8E001E1803 /* Redditate.xcdatamodeld in Sources */,
+				55B284BD1BE31F8E001E1803 /* AppDelegate.swift in Sources */,
+				551C33621BE457EE008BE5FB /* SwiftyJSON.swift in Sources */,
+				55B284EE1BE3218D001E1803 /* PostsTableViewController.swift in Sources */,
+				55B284F21BE326A6001E1803 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C42354D718A381CB008A25A9 /* Sources */ = {
+		55B284CC1BE31F8E001E1803 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42354E918A381CB008A25A9 /* RedditateTests.m in Sources */,
+				55B284D51BE31F8E001E1803 /* RedditateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B284D71BE31F8E001E1803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B284E01BE31F8E001E1803 /* RedditateUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C42354E118A381CB008A25A9 /* PBXTargetDependency */ = {
+		551C337E1BE45AE7008BE5FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C42354BF18A381CB008A25A9 /* Redditate */;
-			targetProxy = C42354E018A381CB008A25A9 /* PBXContainerItemProxy */;
+			name = "Alamofire iOS";
+			targetProxy = 551C337D1BE45AE7008BE5FB /* PBXContainerItemProxy */;
+		};
+		55B284D21BE31F8E001E1803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B284B81BE31F8D001E1803 /* Redditate */;
+			targetProxy = 55B284D11BE31F8E001E1803 /* PBXContainerItemProxy */;
+		};
+		55B284DD1BE31F8E001E1803 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B284B81BE31F8D001E1803 /* Redditate */;
+			targetProxy = 55B284DC1BE31F8E001E1803 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C42354CC18A381CB008A25A9 /* InfoPlist.strings */ = {
+		55B284C01BE31F8E001E1803 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C42354CD18A381CB008A25A9 /* en */,
+				55B284C11BE31F8E001E1803 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C42354E518A381CB008A25A9 /* InfoPlist.strings */ = {
+		55B284C81BE31F8E001E1803 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C42354E618A381CB008A25A9 /* en */,
+				55B284C91BE31F8E001E1803 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C42354EA18A381CB008A25A9 /* Debug */ = {
+		55B284E21BE31F8E001E1803 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -380,34 +504,39 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		C42354EB18A381CB008A25A9 /* Release */ = {
+		55B284E31BE31F8E001E1803 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -419,137 +548,153 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C42354ED18A381CB008A25A9 /* Debug */ = {
+		55B284E51BE31F8E001E1803 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/davegamache/Dropbox-Work/Dropbox\\ (Personal)/Documents/Texts/C\\ Learning/Redditate",
-					"/Users/Dave/Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Redditate/Redditate-Prefix.pch";
-				INFOPLIST_FILE = "Redditate/Redditate-Info.plist";
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-ObjC",
-					"-framework",
-					Reveal,
-				);
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Redditate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redditate.Redditate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		C42354EE18A381CB008A25A9 /* Release */ = {
+		55B284E61BE31F8E001E1803 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/davegamache/Dropbox-Work/Dropbox\\ (Personal)/Documents/Texts/C\\ Learning/Redditate",
-					"/Users/Dave/Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Redditate/Redditate-Prefix.pch";
-				INFOPLIST_FILE = "Redditate/Redditate-Info.plist";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Redditate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redditate.Redditate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		C42354F018A381CB008A25A9 /* Debug */ = {
+		55B284E81BE31F8E001E1803 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Redditate.app/Redditate";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Redditate/Redditate-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "RedditateTests/RedditateTests-Info.plist";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RedditateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redditate.RedditateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redditate.app/Redditate";
 			};
 			name = Debug;
 		};
-		C42354F118A381CB008A25A9 /* Release */ = {
+		55B284E91BE31F8E001E1803 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Redditate.app/Redditate";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Redditate/Redditate-Prefix.pch";
-				INFOPLIST_FILE = "RedditateTests/RedditateTests-Info.plist";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RedditateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redditate.RedditateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redditate.app/Redditate";
+			};
+			name = Release;
+		};
+		55B284EB1BE31F8E001E1803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RedditateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redditate.RedditateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Redditate;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		55B284EC1BE31F8E001E1803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RedditateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redditate.RedditateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Redditate;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C42354BB18A381CB008A25A9 /* Build configuration list for PBXProject "Redditate" */ = {
+		55B284B41BE31F8D001E1803 /* Build configuration list for PBXProject "Redditate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C42354EA18A381CB008A25A9 /* Debug */,
-				C42354EB18A381CB008A25A9 /* Release */,
+				55B284E21BE31F8E001E1803 /* Debug */,
+				55B284E31BE31F8E001E1803 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C42354EC18A381CB008A25A9 /* Build configuration list for PBXNativeTarget "Redditate" */ = {
+		55B284E41BE31F8E001E1803 /* Build configuration list for PBXNativeTarget "Redditate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C42354ED18A381CB008A25A9 /* Debug */,
-				C42354EE18A381CB008A25A9 /* Release */,
+				55B284E51BE31F8E001E1803 /* Debug */,
+				55B284E61BE31F8E001E1803 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C42354EF18A381CB008A25A9 /* Build configuration list for PBXNativeTarget "RedditateTests" */ = {
+		55B284E71BE31F8E001E1803 /* Build configuration list for PBXNativeTarget "RedditateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C42354F018A381CB008A25A9 /* Debug */,
-				C42354F118A381CB008A25A9 /* Release */,
+				55B284E81BE31F8E001E1803 /* Debug */,
+				55B284E91BE31F8E001E1803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B284EA1BE31F8E001E1803 /* Build configuration list for PBXNativeTarget "RedditateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B284EB1BE31F8E001E1803 /* Debug */,
+				55B284EC1BE31F8E001E1803 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55B284C31BE31F8E001E1803 /* Redditate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55B284C41BE31F8E001E1803 /* Redditate.xcdatamodel */,
+			);
+			currentVersion = 55B284C41BE31F8E001E1803 /* Redditate.xcdatamodel */;
+			path = Redditate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = C42354B818A381CB008A25A9 /* Project object */;
+	rootObject = 55B284B11BE31F8D001E1803 /* Project object */;
 }

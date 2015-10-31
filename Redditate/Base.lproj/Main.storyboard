@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xnh-E3-6bC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Posts Table View Controller-->
+        <scene sceneID="2Po-iq-dNB">
+            <objects>
+                <tableViewController id="Xnh-E3-6bC" customClass="PostsTableViewController" customModule="Redditate" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uY1-68-goF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="MGc-jH-Dd8" customClass="PostTableViewCell" customModule="Redditate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MGc-jH-Dd8" id="0jW-DM-Jcv">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Title " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk4-8l-gmF">
+                                            <rect key="frame" x="15" y="20" width="570" height="3.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Uk4-8l-gmF" secondAttribute="trailing" constant="15" id="56Z-8G-obl"/>
+                                        <constraint firstItem="Uk4-8l-gmF" firstAttribute="top" secondItem="0jW-DM-Jcv" secondAttribute="top" constant="20" id="9YP-Wk-pTm"/>
+                                        <constraint firstAttribute="bottom" secondItem="Uk4-8l-gmF" secondAttribute="bottom" constant="20" id="EKK-4S-QsB"/>
+                                        <constraint firstItem="Uk4-8l-gmF" firstAttribute="leading" secondItem="0jW-DM-Jcv" secondAttribute="leading" constant="15" id="uVZ-9v-Pys"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="titleLabel" destination="Uk4-8l-gmF" id="ATV-xP-3Br"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xnh-E3-6bC" id="SGQ-nj-zZF"/>
+                            <outlet property="delegate" destination="Xnh-E3-6bC" id="aKe-If-QOu"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAn-Lk-Pbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="387"/>
+        </scene>
+    </scenes>
+</document>
